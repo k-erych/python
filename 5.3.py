@@ -8,5 +8,3 @@ for char in string.punctuation:
 str4 = "#" + str3
 str5 = str4[:140]
 print(str5)
-elif any(str_1 for word in keyword.kwlist):
-    print("False")
