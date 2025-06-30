@@ -1,9 +1,12 @@
 def find_unique_value(some_list):
     b = int()
-    for i in range(0, 100):
+    for i in some_list:
         a = some_list.count(i)
         if a == 1:
-            b = i
+            if str(i).count(".") == 1:
+                b = float(i)
+            else:
+                b = int(i)
             break
         else:
             continue
