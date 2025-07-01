@@ -10,7 +10,7 @@ def find_unique_value(some_list):
             break
         else:
             continue
-    print(b)
+    return b
 list_1 = [1, 1, 1, 3, 3, 4, 5, 4]
-find_unique_value(list_1)
-
+b = find_unique_value(list_1)
+print(b)
