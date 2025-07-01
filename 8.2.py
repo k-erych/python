@@ -4,16 +4,15 @@ def is_palindrome(text):
     a = text
     for i in string.punctuation:
         a = a.replace(i, "")
-    while True:
-        a = a.replace(" ", "")
-        if " " not in a:
-            break
+    a = a.replace(" ", "")
     a = a.lower()
-    b = len(a)
-    k = False
-    for c in range(0, b):
-        if a[c] == a[-c - 1]:
-            k = True
-    print(k)
 
-is_palindrome(str_1)
+    b = len(a)
+    for c in range(b // 2):
+        if a[c] != a[-(c + 1)]:
+            return False
+    return True
+
+
+k = is_palindrome(str_1)
+print(k)
