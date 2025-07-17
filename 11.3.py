@@ -4,4 +4,4 @@ def is_even(number):
         return True
     else:
         return False
-print(is_even(12345698))
+print(is_even(12345698**2))
