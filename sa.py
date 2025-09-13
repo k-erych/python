@@ -25,7 +25,7 @@ list_of_sorted = list(sorted(dict_of_quantity_of_words.items(), key=lambda item:
 print(list_of_sorted[-1][0].capitalize())
 print(list_of_sorted[-2][0].capitalize())
 print(list_of_sorted[-3][0].capitalize())
-
+print("фошф")
 
 
 
